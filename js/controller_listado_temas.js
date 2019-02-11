@@ -17,7 +17,7 @@ controller('controller_listar_temas', function($scope, $http, $httpParamSerializ
 	$scope.obtener_datos = function(datos){		
 		$http({
 			method: 'POST',
-			url: "http://localhost/PruebaTecnica/index.php/TemasService/ObtenerDatos",
+			url: "http://localhost/prueba_navacom-master/index.php/TemasService/ObtenerDatos",
 			data: $httpParamSerializerJQLike({  }),
 			headers: {'Content-Type': 'application/x-www-form-urlencoded'}
 		})
@@ -39,7 +39,7 @@ controller('controller_listar_temas', function($scope, $http, $httpParamSerializ
 	$scope.vista_previa = function(id){
 		$http({
 			method: 'POST',
-			url: "http://localhost/PruebaTecnica/index.php/TemasService/ObtenerTema",
+			url: "http://localhost/prueba_navacom-master/index.php/TemasService/ObtenerTema",
 			data: $httpParamSerializerJQLike({ id: id}),
 			headers: {'Content-Type': 'application/x-www-form-urlencoded'}
 		})

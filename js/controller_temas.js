@@ -36,7 +36,7 @@ controller('controller_copiar_temas', function($scope, $http, $httpParamSerializ
 	$scope.conectar_servicio = function(datos){		
 		$http({
 			method: 'POST',
-			url: "http://localhost/PruebaTecnica/index.php/TemasService/GuardarDatos",
+			url: "http://localhost/prueba_navacom-master/index.php/TemasService/GuardarDatos",
 			data: $httpParamSerializerJQLike({ jsonData : JSON.stringify(datos) }),
 			headers: {'Content-Type': 'application/x-www-form-urlencoded'}
 		})
